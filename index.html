@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suki App Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Suki App</h1>
+            <nav>
+                <button onclick="showProfile()">Profile</button>
+                <button onclick="showCommunity()">Community</button>
+                <button onclick="showSwipe()">Swipe</button>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <div id="profile" class="screen">
+                <h2>Profile Customization</h2>
+                <label for="avatar-name">Enter Your Name:</label>
+                <input type="text" id="avatar-name" placeholder="Anime Name">
+                <button onclick="saveProfile()">Save Profile</button>
+            </div>
+            <div id="community" class="screen">
+                <h2>Community Feed</h2>
+                <div class="post">
+                    <p>What's your favorite anime?</p>
+                    <button>Comment</button>
+                </div>
+            </div>
+            <div id="swipe" class="screen">
+                <h2>Swipe Feed</h2>
+                <div class="swipe-card">
+                    <p>Anime Enthusiast: Person 1</p>
+                    <button onclick="swipeLeft()">Swipe Left</button>
+                    <button onclick="swipeRight()">Swipe Right</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
